@@ -18,7 +18,9 @@ class Queue:
         
 
     def dequeue(self):
-        pass
+        # Check if the storage is empty
+        if self.len() > 0:
+        
 
     def len(self):
         pass
