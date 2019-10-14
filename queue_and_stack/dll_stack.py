@@ -15,7 +15,8 @@ class Stack:
         self.storage.add_to_head(value)
 
     def pop(self):
-        pass
+        # Check if the storage is empty
+        if self.len() > 0:
 
     def len(self):
-        pass
+        return self.storage.__len__()
