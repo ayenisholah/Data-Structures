@@ -20,6 +20,8 @@ class Stack:
             # Decrease the size of the storage when item is removed
             value = self.storage.head.value
             # Remove the item from the head
+            self.storage.remove_from_head()
+            return value
 
     def len(self):
         return self.storage.__len__()
