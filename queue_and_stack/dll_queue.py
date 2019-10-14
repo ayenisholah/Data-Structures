@@ -24,6 +24,9 @@ class Queue:
             self.size -= 1
             # get value of item at the head to be removed
             value = self.storage.head.value
+            # Remove the item from the head
+            self.storage.remove_from_head()
+            return value
         
 
     def len(self):
