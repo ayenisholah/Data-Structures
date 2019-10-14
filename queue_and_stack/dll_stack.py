@@ -11,6 +11,8 @@ class Stack:
     def push(self, value):
         # Increase the size of the storage
         self.size += 1
+        # Add item to the head of the stack
+        self.storage.add_to_head(value)
 
     def pop(self):
         pass
