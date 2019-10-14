@@ -27,6 +27,8 @@ class Queue:
             # Remove the item from the head
             self.storage.remove_from_head()
             return value
+        # has no length return none
+        return None
         
 
     def len(self):
