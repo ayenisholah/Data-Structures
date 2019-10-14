@@ -13,6 +13,8 @@ class Queue:
     def enqueue(self, value):
         # Increase the size of the storage
         self.size += 1
+        # Add item for the storage 
+        self.storage.add_to_tail(value)
         
 
     def dequeue(self):
