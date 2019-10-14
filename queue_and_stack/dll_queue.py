@@ -32,4 +32,5 @@ class Queue:
         
 
     def len(self):
-        pass
+        return self.storage.__len__()
+
