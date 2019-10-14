@@ -22,6 +22,8 @@ class Queue:
         if self.len() > 0:
              # Decrease the size of the storage when item is removed
             self.size -= 1
+            # get value of item at the head to be removed
+            value = self.storage.head.value
         
 
     def len(self):
