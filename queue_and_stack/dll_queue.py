@@ -20,6 +20,8 @@ class Queue:
     def dequeue(self):
         # Check if the storage is empty
         if self.len() > 0:
+             # Decrease the size of the storage when item is removed
+            self.size -= 1
         
 
     def len(self):
