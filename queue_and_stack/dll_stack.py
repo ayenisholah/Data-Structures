@@ -17,6 +17,9 @@ class Stack:
     def pop(self):
         # Check if the storage is empty
         if self.len() > 0:
+            # Decrease the size of the storage when item is removed
+            value = self.storage.head.value
+            # Remove the item from the head
 
     def len(self):
         return self.storage.__len__()
